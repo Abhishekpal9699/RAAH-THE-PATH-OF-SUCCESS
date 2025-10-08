@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Quiz - Topics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">SkillQuiz</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Topics</h1>
+    <p>Select a topic and start your quiz.</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="topics"></div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 SkillQuiz | Made with ❤️ for Learners</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const skillId = urlParams.get("skillId");
+    loadTopics(skillId);
+  </script>
+</body>
+</html>

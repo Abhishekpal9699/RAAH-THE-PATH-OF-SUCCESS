@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Quiz - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">SkillQuiz</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Welcome to SkillQuiz</h1>
+    <p>Test your knowledge. Improve your skills. Prepare for interviews.</p>
+  </div>
+
+  <!-- Skills Section -->
+  <h2 style="text-align:center; margin-top:20px;">Choose a Skill Area</h2>
+  <div id="skills" class="card-container"></div>
+
+  <!-- Recommended Courses -->
+  <h2 style="text-align:center; margin-top:40px;">Recommended Courses</h2>
+  <div id="courses" class="card-container"></div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 SkillQuiz | Made with ❤️ for Learners</p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadSkills();
+    loadCourses();
+  </script>
+</body>
+</html>
